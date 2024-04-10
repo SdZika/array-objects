@@ -72,6 +72,7 @@ for (key in productData) {
 
             if(hiestSale < totalRevenue) {
                 hiestSale = totalRevenue;
+                //bestSellingProductId = id;
             }
         }
 }

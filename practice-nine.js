@@ -6,15 +6,16 @@ Task:
 - Convert this difference from milliseconds to days (considering 1 day = 24 hours, 1 hour = 60 minutes, 1 minute = 60 seconds, 1 second = 1000 milliseconds).
 - Return the total number of days.*/
 
-const mybirthdayString = "1982-04-07";
 
-const mybirthday = new Date(mybirthdayString);
+
+/*const mybirthday = new Date(mybirthdayString);
 let today = new Date();
 
 let daysLived = Math.floor((today - mybirthday) / (1000 * 60 * 60 * 24));
-console.log(`Total days lived ${daysLived}`);
+console.log(`Total days lived ${daysLived}`);*/
 
-function caclculateDaysLived (date) {
+
+function caclculateDaysLived (mybirthdayString) {
     const mybirthday = new Date(mybirthdayString);
     let today = new Date();
 
@@ -22,4 +23,4 @@ function caclculateDaysLived (date) {
     return `Total days lived ${daysLived}`;
 }
 
-console.log(caclculateDaysLived(mybirthdayString));
+console.log(caclculateDaysLived("2004-05-06"));
